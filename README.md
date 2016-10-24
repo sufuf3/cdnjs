@@ -30,6 +30,75 @@ Please raise a new pull request for new library additions and existing library u
 
 ## Adding a new or updating an existing library
 
+### Add a new library via a single package.json
+
+There is a simple way to add a library via single package.json only.
+You can follow these steps:
+
+1. Fork cdnjs repository to your GitHub account.
+
+2. Create a new folder named **libname** under `/ajax/libs`, then create a package.json under `/libname`.
+
+    > A tip: you can type `/libname/package.json` after cdnjs/ajax/libs/ to create them if you use web interface
+
+    > Note: the libname must match the name in package.json
+
+3. Edit package.json:
+
+    take the npm package lib `frzr` for an example:
+    ```js
+    {
+      "name": "frzr",
+      "description": "Turboboosted 2 KB view library",
+      "homepage": "https://frzr.js.org",
+      "repository": {
+        "type": "git",
+        "url": "git://github.com/pakastin/frzr"
+      },
+      "author": "Juha Lindstedt",
+      "license": "ISC",
+      "keywords": [
+        "frzr",
+        "tiny",
+        "view",
+        "library",
+        "turboboosted",
+        "framework",
+        "javascript",
+        "frontend",
+        "client-side",
+        "dom"
+      ],
+      "filename": "frzr.min.js",
+      "npmName": "frzr",
+      "npmFileMap": [
+        {
+          "basePath": "dist",
+          "files": [
+            "frzr*.js"
+          ]
+        }
+      ]
+    }
+    ```
+    you can change to use git auto-update, [autoupdate.md](https://github.com/cdnjs/cdnjs/blob/master/documents/autoupdate.md#enabling-npmrecommended-or-git-auto-update)
+
+    > Note:
+
+    > Don't add version in package.json if you don't add it with real file
+
+    > Please use SPDX in license, [license-list.json](https://github.com/cdnjs/cdnjs/blob/master/tools/license-list.json)
+
+    > Please point to minified file in filename
+
+4. Propose new file.
+
+5. Create a pull request.
+
+6. We will check the PR and merge it.
+
+###Others
+
 cdnjs relies on user-submitted pull requests and automatic updating via `npm` or `git` repository to populate and update libraries.
 
 To add a new library, or update an existing library outside of `npm`/`git`, start by [forking the cdnjs repo](https://github.com/cdnjs/cdnjs/fork) to your own GitHub account.

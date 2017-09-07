@@ -1,0 +1,26 @@
+{
+  "name": "@openui5",
+  "filename": "sap-ui-core.js",
+  "description": "OpenUI5 Core & Runtime - OpenUI5 Core Library sap.ui.core",
+  "license": "Apache-2.0",
+  "keywords": [
+    "openui5",
+    "sapui5",
+    "ui5"
+  ],
+  "author": "SAP SE <*@sap.com>",
+  "homepage": "https://openui5.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SAP/openui5.git"
+  },
+  "npmName": "@openui5/sap.ui.core",
+  "npmFileMap": [
+    {
+      "basePath": "sap.ui.core/src",
+      "files": [
+        "sap-ui-core.js"
+      ]
+    }
+  ]
+}

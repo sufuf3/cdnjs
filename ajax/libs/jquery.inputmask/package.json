@@ -2,7 +2,7 @@
   "name": "jquery.inputmask",
   "version": "3.3.4",
   "description": "Inputmask is a javascript library which creates an input mask.  Inputmask can run against vanilla javascript, jQuery and jqlite.",
-  "filename": "jquery.inputmask.bundle.min.js",
+  "filename": "min/jquery.inputmask.bundle.min.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/RobinHerbots/Inputmask.git"
@@ -22,7 +22,7 @@
   },
   "license": "MIT",
   "homepage": "https://robinherbots.github.io/Inputmask/",
-  "npmName": "jquery.inputmask",
+  "npmName": "inputmask",
   "npmFileMap": [
     {
       "basePath": "dist",
@@ -31,9 +31,9 @@
       ]
     },
     {
-      "basePath": "extra",
+      "basePath": "",
       "files": [
-        "**/*"
+        "css/*"
       ]
     }
   ]

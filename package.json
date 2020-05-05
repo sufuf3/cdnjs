@@ -11,7 +11,9 @@
   "scripts": {
     "test": "vows",
     "devTest": "jasmine",
-    "doctoc": "doctoc --title='## Table of Contents' README.md"
+    "doctoc": "doctoc --title='## Table of Contents' README.md",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "license": "MIT",
   "dependencies": {
@@ -28,7 +30,8 @@
     "semver": "^5.6.0",
     "semver-stable": "^2.0.4",
     "superagent": "^4.1.0",
-    "tarball-extract": "^0.0.6"
+    "tarball-extract": "^0.0.6",
+    "snyk": "^1.317.0"
   },
   "devDependencies": {
     "JSV": "^4.0.2",
@@ -42,5 +45,6 @@
   },
   "engines": {
     "node": "^10"
-  }
+  },
+  "snyk": true
 }
